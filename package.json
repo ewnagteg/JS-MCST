@@ -1,0 +1,15 @@
+{
+  "name": "checkers",
+  "version": "0.0.0",
+  "description": "Checkers AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "runai": "node --experimental-modules ./static/js/generatedata.mjs"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "ewnagteg",
+  "license": "ISC"
+}

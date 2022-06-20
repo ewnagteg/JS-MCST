@@ -1,0 +1,6 @@
+*.c
+*.h
+test.*
+*.exe
+a.*
+node_modules/

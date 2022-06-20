@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 5em;
+        }
+        * {
+            margin: 0.5em;
+        }
+        .game-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .button {
+            width: fit-content;
+        }
+        .dropdown {
+            width: 50%;
+        }
+    </style>
+<div class="container">
+    <div class="game-container">
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <p id="text"></p>
+        <button id="button" class="button">Reset</button>
+        <button id="pop" class="button">pop state</button>
+        <label for="topaiselection">Choose top player Algorithm:</label>
+        <select id="topaiselection" class="dropdown">
+            <option value="manual">Play as Player</option>
+            <option value="mcst">monte carlo search tree</option>
+            <option value="minimax">Minimax</option>
+            <option value="alpha-beta">Alpha-Beta</option>
+        </select>
+        <label for="aiselection">Choose bottom player AI Algorithm:</label>
+        <select id="aiselection" class="dropdown">
+            <option value="mcst">monte carlo search tree</option>
+            <option value="minimax">Minimax</option>
+            <option value="alpha-beta">Alpha-Beta</option>
+        </select>
+    </div>
+</div>
+<script src="/static/js/test_board.mjs" type="module"></script>
+
+</html>
